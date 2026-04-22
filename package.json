@@ -1,0 +1,8 @@
+{
+  "name": "school-management-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix backend exec nodemon server.js",
+    "start": "npm --prefix backend run start"
+  }
+}
