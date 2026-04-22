@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="dashboard-header">
+      <div>
+        <h1>Teacher Dashboard</h1>
+        <p>Bright Future School</p>
+      </div>
+      <button type="button" id="teacherLogoutButton" class="small-button">Logout</button>
+    </header>
+
+    <section class="panel">
+      <h2>My Profile</h2>
+      <div id="teacherInfo"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Students</h2>
+      <div id="studentsList" class="students-list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Mark Attendance</h2>
+      <form id="attendanceForm">
+        <label for="attendanceSearch">Student ID, Name, or Email</label>
+        <input type="text" id="attendanceSearch" placeholder="Search student">
+
+        <label for="attendanceStatus">Attendance</label>
+        <select id="attendanceStatus" required>
+          <option value="present">Present</option>
+          <option value="absent">Absent</option>
+        </select>
+
+        <button type="submit">Save Attendance</button>
+      </form>
+      <div id="attendanceMessage"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Add Exam Result</h2>
+      <form id="examForm">
+        <label for="examSearch">Student ID, Name, or Email</label>
+        <input type="text" id="examSearch" placeholder="Search student">
+
+        <label for="grade">Grade</label>
+        <input type="text" id="grade" placeholder="Grade 8">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Math">
+
+        <label for="score">Score</label>
+        <input type="number" id="score" min="0" placeholder="80">
+
+        <label for="total">Total Marks</label>
+        <input type="number" id="total" min="1" placeholder="100">
+
+        <button type="submit">Save Exam Result</button>
+      </form>
+      <div id="examMessage"></div>
+    </section>
+  </main>
+
+  <script src="teacher-dashboard.js"></script>
+</body>
+</html>
