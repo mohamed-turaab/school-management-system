@@ -1,8 +1,8 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const path = require('path');
-require('dotenv').config();
+const express = require('express'); // Xirmo loogu talagalay in lagu dhiso server-ka (Web server framework)
+const mongoose = require('mongoose'); // Xirmo loogu talagalay in lagu xirmo database-ka MongoDB
+const cors = require('cors'); // Si loo ogolaado in frontend-ka iyo backend-ka ay wada hadlaan
+const path = require('path'); // Si loo maamulo dariiqyada faylasha
+require('dotenv').config(); // Si loo akhriyo xogta sirta ah ee ku jirta .env
 
 const studentRoutes = require('./routes/studentRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -15,9 +15,10 @@ const createDefaultTeacher = require('./utils/createDefaultTeacher');
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
-app.use(express.static(path.join(__dirname, '../frontend')));
+// Qaabeynta Middleware (Qaybaha dhex-dhexaadka ah)
+app.use(cors()); // Ogolaanshaha cross-origin requests
+app.use(express.json()); // In server-ka uu fahmo JSON data-da
+app.use(express.static(path.join(__dirname, '../frontend'))); // Halkaan waxaa laga helayaa faylasha frontend-ka
 
 app.use('/api/students', studentRoutes);
 app.use('/api/auth', authRoutes);
