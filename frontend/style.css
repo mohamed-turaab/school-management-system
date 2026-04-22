@@ -1,0 +1,231 @@
+:root {
+  --blue: #1d4ed8;
+  --white: #ffffff;
+  --border: 1px solid var(--blue);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--blue);
+  background: var(--white);
+  line-height: 1.4;
+}
+
+.page {
+  width: min(980px, calc(100% - 32px));
+  margin: 24px auto;
+}
+
+.login-page {
+  width: min(420px, calc(100% - 32px));
+}
+
+.panel {
+  border: var(--border);
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.login-panel {
+  margin-top: 64px;
+}
+
+.home-header {
+  border: var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.home-header a {
+  color: var(--white);
+  background: var(--blue);
+  border: var(--border);
+  padding: 12px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+}
+
+.home-link {
+  color: var(--white);
+  background: var(--blue);
+  border: var(--border);
+  padding: 12px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+}
+
+.dashboard-header {
+  border: var(--border);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-header p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0 0 16px;
+}
+
+.dashboard-header h1 {
+  margin-bottom: 6px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 12px;
+  border: var(--border);
+  font: inherit;
+  min-height: 44px;
+}
+
+input {
+  color: var(--blue);
+  background: var(--white);
+}
+
+input::placeholder {
+  color: var(--blue);
+}
+
+button {
+  color: var(--white);
+  background: var(--blue);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-button {
+  width: auto;
+}
+
+.students-list {
+  display: grid;
+  gap: 12px;
+}
+
+.student-card {
+  border: var(--border);
+  padding: 14px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.student-card p {
+  margin: 6px 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  margin-top: auto;
+}
+
+.actions button {
+  flex: 1;
+}
+
+#message {
+  margin-bottom: 12px;
+}
+
+.student-result {
+  margin-top: 12px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: var(--border);
+  color: var(--blue);
+  background: var(--white);
+  font: inherit;
+  min-height: 44px;
+}
+
+@media (max-width: 720px) {
+  .page {
+    width: calc(100% - 20px);
+    margin: 12px auto;
+  }
+
+  .panel {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .home-header,
+  .dashboard-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-header a,
+  .home-link,
+  .small-button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .student-card {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 721px) {
+  .students-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .students-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
