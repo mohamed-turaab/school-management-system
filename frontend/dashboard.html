@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="dashboard-header">
+      <div>
+        <h1>Admin Dashboard</h1>
+        <p>School Management System</p>
+      </div>
+      <button id="logoutButton" class="small-button">Logout</button>
+    </header>
+
+    <section class="panel">
+      <h2>Add Student</h2>
+      <form id="studentForm">
+        <label for="name">Student Name</label>
+        <input type="text" id="name" placeholder="Student name" required>
+        <label for="email">Student Email</label>
+        <input type="email" id="email" placeholder="Student email">
+        <label for="password">Student Password</label>
+        <input type="password" id="password" placeholder="Student password" required>
+        <label for="birthDate">Date of Birth</label>
+        <input type="date" id="birthDate" required>
+        <label for="age">Student Age</label>
+        <input type="number" id="age" placeholder="Age" min="1" required>
+        <label for="studentClass">Student Class</label>
+        <input type="text" id="studentClass" placeholder="Class" required>
+        <button type="submit">Add Student</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Add Teacher</h2>
+      <form id="teacherForm">
+        <label for="teacherName">Teacher Name</label>
+        <input type="text" id="teacherName" placeholder="Teacher name" required>
+
+        <label for="teacherEmail">Teacher Email</label>
+        <input type="email" id="teacherEmail" placeholder="Teacher email" required>
+
+        <label for="teacherPassword">Teacher Password</label>
+        <input type="password" id="teacherPassword" placeholder="Teacher password" required>
+
+        <label for="teacherSubject">Subject</label>
+        <input type="text" id="teacherSubject" placeholder="Subject" required>
+
+        <label for="teacherPhone">Phone</label>
+        <input type="text" id="teacherPhone" placeholder="Phone number">
+
+        <button type="submit">Add Teacher</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Teachers</h2>
+      <div id="message"></div>
+      <div id="teachersList" class="students-list"></div>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
