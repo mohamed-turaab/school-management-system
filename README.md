@@ -1,122 +1,94 @@
-# Bismillahi Rahmani Rahim
-
 # Nidaamka Maamulka Iskuulka (School Management System)
 
-Kani waa mashruuc si heer sare ah loo diyaariyey oo loogu talagalay in lagu maamulo dhammaan hawlaha ka socda iskuulka. Mashruucan waxaa loo dhisay si aad u fudud oo qof kasta uu u fahmi karo nidaamka uu u shaqeeyo.
+Kani waa mashruuc ballaaran oo loogu talagalay in lagu maamulo dhammaan xogta iskuulka, sida ardayda, macalimiinta, iyo natiijooyinka imtixaannada.
+Mashruucan waxaa loo dhisay si casri ah, iyadoo la adeegsanayo tignoolajiyada ugu dambeysay ee dhinaca horumarinta webka.
+Hoos waxaan si faahfaahsan ugu sharxi doonaa qaabka uu u shaqeeyo dhinaca hore (Frontend), dhinaca dambe (Backend), iyo sida ay xogtu isaga kala gudubto.
 
-## Sharaxaadda Qaybta Backend-ka (50 Sadar)
+### 1.  (Frontend)
+Dhinaca hore ee mashruucan waa qaybta ay arkeen dadka isticmaalaya nidaamka maalintii oo dhan.
+Waxaa lagu dhisay luuqadaha asaasiga ah ee HTML5, CSS3, iyo JavaScript (ES6+).
+HTML-ka waxaa loo adeegsaday in lagu dhiso laf-dhabarta bogga iyo dhammaan sanduubyada xogta lagu qoro.
+CSS-kana waxaa loo adeegsaday in bogga laga dhigo mid qurux badan oo indhuhu ku raaxaystaan, iyadoo la adeegsanayo midabo isku habboon.
+JavaScript-ka asalka ah (Vanilla JS) ayaa loo adeegsaday in bogga laga dhigo mid firfircoon oo hadba wixii loo baahdo si degdeg ah u qabanaya.
+Frontend-ku wuxuu ka kooban yahay bogag dhowr ah oo aad muhiim u ah:
+1.  **Dashboard-ka Maamulaha**: Meesha laga arko tirada guud ee ardayda, macalimiinta, iyo dhammaan warbixinnada muhiimka ah.
+2.  **Dashboard-ka Macalinka**: Meesha macalinku ka galiyo dhibcaha ardayda, uuna ka hubiyo inta arday ee soo xaadirtay.
+3.  **Dashboard-ka Ardayga**: Meesha ardaygu ka arko natiijadiisa imtixaannada iyo fariimaha uga yimaada iskuulka.
+4.  **Bogga Login-ka**: Meesha ammaan ah oo qof kasta uu ka galo qaybta uu kaga magacaaban yahay iskuulka.
+Muuqaalka nidaamkani wuxuu u shaqeeyaa si la mid ah mobile-ka iyo computer-ka (Responsive Design).
+Kani waa mid ka mid ah sifooyinka ugu muhiimsan ee frontend-ka casriga ah maanta.
+Wuxuu isticmaalaha siinayaa jawi sahlan oo uu ku dhex mari karo dhammaan qaybaha kala duwan ee websaydhka.
 
-1. **Backend Intro**: Waa maskaxda ka dambaysa dhammaan hawlaha nidaamkani qabanayo.
-2. **Shaqada Backend-ka**: Backend-ku wuxuu mas'uul ka yahay inuu xiriiriyo frontend-ka iyo database-ka.
-3. **Node.js**: Waa platform-ka awoodda siinaya in JavaScript-ka lagu isticmaalo dhinaca server-ka.
-4. **Express.js**: Waa framework-ka loo adeegsaday dhisidda server-ka iyo jidadka xogta.
-5. **MongoDB**: Waa database-ka halka lagu kaydiyo dhammaan magacyada iyo macluumaadka.
-6. **Mongoose**: Waa xiriiriyaha u dhexeeya Node.js iyo MongoDB si xogta loo habeeyo.
-7. **Controllers**: Halkan waxaa ku yaal qawaaniinta ama logic-ga mashruuca iyo go'aamada.
-8. **Models**: Waxay qeexaan qaabka xogta (Schema) ee loo dirayo database-ka.
-9. **Routes**: Waa dariiqyada ay xogtu u marto si ay u gaarto meesha looga baahan yahay.
-10. **Middleware**: Kani waa ilaalada amniga ee hortaagan jidka xogta.
-11. **Authentication**: Nidaamka lagu hubiyo aqoonsiga qofka soo gelaya (Login).
-12. **.env File**: Waa faylka lagu kaydiyo sirta iskuulka si ammaan ah.
-13. **server.js**: Waa faylka ugu muhiimsan ee server-ku ka bilaawdo.
-14. **API Endpoints**: Waa cinwaannada loo adeegsado in xogta lagu soo qaado.
-15. **JSON Data**: Waa qaabka ay labada qaybood isugu gudbiyaan xogta.
-16. **Status Codes**: Nambarro lagu ogaanayo haddii shaqadu guulaysatay.
-17. **DB Connection**: Code gaar ah oo server-ka ku xira MongoDB.
-18. **CORS**: Hab loogu oggolaanayo labada qaybood inay wada hadlaan.
-19. **Error Handling**: Nidaam lagu xalliyo khaladaadka haddii ay yimaadaan.
-20. **Request Handling**: Sida server-ku u aqbalo codsiyada ka imaanaya dadka.
-21. **Response Logic**: Sida server-ku ugu jawaabo dadka xogta raadinaya.
-22. **Security Checks**: Hubinta in qofka wax beddelaya uu oggolaansho leeyahay.
-23. **Data Validation**: Hubinta in xogtu sax tahay ka hor intaan la kaydin.
-24. **Scalability**: In server-ku qaban karo dad badan oo isku mar isticmaalaya.
-25. **Maintenance**: Code nidaamsan oo mustaqbalka si dhib yar loo beddeli karo.
-26. **Dependency Management**: Maamulka xirmooyinka software-ka (npm).
-27. **Async Functions**: Shaqooyinka backend-ka ee u dhaca si aan is xiriirin.
-28. **Environment Config**: Dejinta server-ka iyada oo loo eegayo bey'adda uu ku jiro.
-29. **Root JSON**: Faylka `package.json` ee backend-ka hagaya.
-30. **NPM Scripts**: Amarrada lagu kiciyo server-ka (`npm start`).
-31. **Database Schema**: Naqshadda xogta ee Admin, Teacher, iyo Student.
-32. **Seeding Logic**: Code-ka si toos ah ugu daraya xogta demo-ga ah database-ka.
-33. **Route Protection**: Xiridda jidadka xogta haddii aan login la ahayn.
-34. **Admin Privileges**: Awoodaha gaarka ah ee uu leeyahay maamulaha iskuulka.
-35. **Teacher Privileges**: Awoodaha macalinka ee dhinaca casharrada.
-36. **Student Data Logic**: Sida xogta ardayda loo keeno browser-ka.
-37. **Token Management**: Maamulka aqoonsiga sirta ah ee qofka (JWT).
-38. **Header Parsing**: Akhrinta macluumaadka dheeriga ah ee Request-ka.
-39. **Body Parsing**: Akhrinta xogta JSON ee qofku soo diray.
-40. **Static Files**: U adeegidda faylasha frontend-ka ee server-ka gudihiisa.
-41. **Port Configuration**: Cinwaanka (Port) uu server-ku ku dhageysanayo.
-42. **Logging**: Diiwaangelinta waxyaabaha ka dhacaya gudaha server-ka.
-43. **Database Security**: Ka ilaalinta database-ka weerarrada dibadda.
-44. **Logic Separation**: Kala saaridda routes-ka iyo controllers-ka.
-45. **Utility Functions**: Shaqooyin yar yar oo caawiya code-ka weyn.
-46. **Default Admin**: Samaynta Admin-ka koowaad si toos ah.
-47. **Error Messages**: Fariimaha loo diro qofka haddii uu qalad sameeyo.
-48. **Success Messages**: Fariimaha loo diro qofka marka uu shaqada u dhammaato.
-49. **Connection Status**: Muujinta in MongoDB ay si fiican u xiran tahay.
-50. **Backend Conclusion**: Waa qeybta mashruuca ka dhigeysa mid shaqeynaya.
+### 2.  (Backend)
+Dhinaca dambe waa maskaxda mashruuca ee hageysa dhammaan waxyaabaha gadaal ka dhacaya.
+Halkan waxaa ku yaal server-ka oo ah kii fulinayay dhammaan amarrada ka imaanaya dhinaca hore ee websaydhka.
+Waxaan u adeegsanay Node.js iyo Express.js si aan u dhisno server awood badan oo u dulqaadan kara culeyska badan.
+Backend-ka wuxuu mas'uul ka yahay shaqooyin dhowr ah oo isugu jira kuwo muuqda iyo kuwo qarsoon:
+- **Xaqiijinta Ammaanka**: Hubinta in qof kasta oo raba inuu xogta arko uu yahay qof xaq u leh (Authentication & Authorization).
+- **Isku xirka Database-ka**: Server-ku wuxuu si toos ah ula hadlaa MongoDB oo ah meesha xogta lagu kaydiyo ee ammaan ah.
+- **Maamulka API-yada**: Waa dariiqyada ama mareennada ay xogtu u marto si ay u gaarto frontend-ka gudihiisa.
+- **Kaydinta Mudnaanta**: Hubinta in ardaygu uusan beddeli karin dhibcihiisa, balse macalinku kaliya uu taas samayn karo.
+Backend-ku waa meesha go'aamada oo dhan laga gaaro, xogtana si hufan loogu habeeyo.
 
----
+### 3. Sida GET u shaqeyso (Soo bandhigidda Xogta)
+Marka aan rabo inaan aragno liiska ardayda ama macluumaadka qof jooga, waxaan isticmaalnaa amarka loo yaqaano GET.
+GET waa midka naga caawiya inaan xogta ka soo "akhrisanno" ama aan ka soo "qaadanno" database-ka.
+Tusaale ahaan, marka uu maamuluhu soo galo dashboard-ka, frontend-ku wuxuu server-ka u diraa codsi GET ah.
+Server-ku markaas wuxuu aadaa MongoDB, wuxuu soo ururiyaa dhammaan magacyada ardayda ku jira database-ka.
+Ka dibna wuxuu u soo celiyaa frontend-ka si loogu soo bandhigo jadwallada (Tables) looguna arko si qurux badan.
+Shaqadani waxay u dhacdaa ilbiriqsiyo gudahood oo aysan qof isticmaalayaa dareemayn wax daahid ah.
+Waa habka ugu badan ee nidaamku u adeegsado inuu xogta ku soo muujiyo bogga hore.
 
-## Sharaxaadda Qaybta Frontend-ka (50 Sadar)
+### 4. Sida POST u shaqeyso (Kaydinta Xog Cusub)
+Marka aan rabo inaan diwaangelino arday cusub ama aan ku darno natiijo imtixaan, waxaan isticmaalnaa amarka POST.
+POST waa ka mas'uulka "dirista" ama "kaydinta" xogta cusub ee la abuurayo ee horay u jirin.
+Tusaale ahaan, marka la buuxiyo foomka (Form) ee lagu diwaangelinayo arday cusub laguna riixo badhanka "Submit".
+Xogtaas magaca, fasalka, iyo taleefanka ah waxaa lagu soo duubaa qaab JSON ah.
+Xogtaas waxaa si degdeg ah loogu diraa backend-ka iyada oo loo marayo codsiga POST-ka.
+Server-ka ayaa markaas hubiya haddii ay xogtu dhammaystiran tahay iyo haddii qofka soo diray uu oggolaansho u leeyahay.
+Haddii wax walba sax yihiin, server-ku wuxuu ku kaydiyaa MongoDB, wuxuuna noo soo celiyaa fariin guul ah.
+GET waa soo qaadasho, POST waa geynta iyo kaydinta xog cusub.
 
-1. **Frontend Intro**: Waa muuqaalka sare ee qofku ku dhex shaqaynayo (UI).
-2. **Shaqada Frontend-ka**: Wuxuu u qurxiyaa xogta qofka si uu ugu fududaado isticmaalka.
-3. **HTML5**: Waa laf-dhabarta mashruuca ee dhisaysa dhammaan sanduubyada.
-4. **CSS3**: Waa qaybta midabada iyo quruxda siinaysa bog kasta oo iskuulka ah.
-5. **JavaScript**: Waa qaybta dhaqdhaqaaqa iyo nolosha geliya bogga iskuulka.
-6. **Responsive Design**: Muuqaalku wuxuu isku waafajiyaa mobile-ka iyo computer-ka.
-7. **User Interface (UI)**: Waa naqshadda quruxda badan ee indhuhu ku raaxaystaan.
-8. **User Experience (UX)**: Waa sida ay qofka ugu fududahay inuu dhex maro bogga.
-9. **Index Page**: Waa bogga koowaad ee iskuulka ee dadka soo dhoweeya.
-10. **Login Forms**: Meesha ay Admin, Macalin, iyo Arday ay ka galaan nidaamka.
-11. **Admin Dashboard**: Bogga weyn ee maamuluhu xogta oo dhan ka eegayo.
-12. **Teacher Dashboard**: Meesha macalimiintu ka maamulaan casharradooda.
-13. **Student Dashboard**: Bogga ardaygu ka arko natiijooyinka iyo casharrada.
-14. **Navigation Bar**: Meesha sare ee laga dhex maro dhammaan bogagga kale.
-15. **Sidebars**: Menu-yada dhinacyada ee kuu fududeynaya inaad wax raadiso.
-16. **Buttons**: Badhamada la riixo si ay shaqo u dhacdo ama bog u furmo.
-17. **Input Fields**: Sanduuqyada lagu qoro magacyada iyo password-yada.
-18. **Tables**: Meelaha lagu soo bandhigo liiska ardayda iyo macalimiinta.
-19. **Modals**: Daaqadaha yar yar ee soo baxa si xog cusub loogu daro.
-20. **Alerts**: Fariimaha lagu ogeysiinayo qofka haddii shaqadu u dhammaatay.
-21. **Card Layouts**: Sanduuqyada yaryar ee xogta loo habeeyey si qurux badan.
-22. **Typography**: Doorashada farta (fonts) si qoraalku u noqdo mid sahlan.
-23. **Icons**: Sawirrada yaryar ee tilmaamaya shaqooyinka kala duwan.
-24. **Hovers**: Isbeddelka midabka marka arrow-gu ku dul istaago badhanka.
-25. **Transitions**: Sida boggu u isbedbedelo isagoo si tartiib ah u socda.
-26. **Fetch API**: Sida frontend-ku xogta uga soo codsado backend-ka.
-27. **DOM Manipulation**: Wax ka beddelka bogga iyada oo aan la refresh-gareyn.
-28. **Event Listeners**: Akhrinta waxa qofku riixayo ama uu qorayo.
-29. **LocalStorage**: Kaydinta xogta qofka si uusan login-ka u lumin.
-30. **Form Validation**: Hubinta qofka inuu wax walba sax u qoray.
-31. **Loading Spinners**: Muujinta in xogtu ay jidka ku soo jirto (Wait).
-32. **Dashboard Icons**: Sawirro muujinaya tirada guud ee ardayda iyo macalimiinta.
-33. **Profile Sections**: Meelaha qof kasta uu ku arkayo macluumaadkiisa gaarka ah.
-34. **Sign Out Button**: Badhanka looga baxayo nidaamka si ammaan ah.
-35. **Header Sections**: Qaybaha sare ee bog kasta si loo ogaado meesha la joogo.
-36. **Footer**: Qaybta hoose ee bogga oo macluumaad dheeraad ah leh.
-37. **Flexbox**: Farsamo lagu nidaamiyo sanduuqyada si ay isku saf ugu jiraan.
-38. **Grid Layout**: Habka loo kala qeybiyo bogga qeybo kala duwan oo waaweyn.
-39. **Vanilla JS**: Isticmaalka JavaScript-ka asalka ah iyadoon xirmo kale la isticmaalin.
-40. **Script Inclusion**: Sida JavaScript-ka loogu xiro HTML-ka gudihiisa.
-41. **Link Tagging**: Sida CSS-ka loogu xiro HTML-ka si uu u qurxiyo.
-42. **Image Optimization**: Isticmaalka sawirro fudud si boggu uu u dheereeyo.
-43. **Clean Folder Structure**: Sida loo habeeyey galka frontend-ka si fudud.
-44. **Data Rendering**: Sida xogta backend-ka loogu soo bandhigo HTML-ka.
-45. **Redirection Logic**: Sida qofka login-ka sameeyay loogu diro dashboard-kiisa.
-46. **Error Pages**: Bogagga muujinaya in meeshu ay xiran tahay ama qalad dhacay.
-47. **Color Palettes**: Midabo isku habboon oo la douray si muuqaalku u dego.
-48. **User Flow**: Sida ay ugu fududahay qofka inuu isaga kala goosho bogagga.
-49. **Browser Compatibility**: In nidaamku ka shaqeeyo Chrome, Edge, iyo Safari.
-50. **Frontend Conclusion**: Waa qaybta quruxda iyo isticmaalka siinaysa mashruuca.
+### 5. Sida DELETE u shaqeyso (Tirtirista Xogta)
+Haddii la rabo in la tirtiro arday isaga baxay iskuulka ama xog khalad ah, waxaan adeegsanaa amarka DELETE.
+DELETE waa habka looga saaro xogta aan loo baahnayn database-ka gudihiisa si aan mar dambe loo arkin.
+Marka badhanka tirtirista (Delete Button) la riixo, frontend-ku wuxuu dirayaa codsi DELETE ah.
+Codsigan wuxuu wataa aqoonsiga gaarka ah (ID Number) ee qofka ama xogta la rabo in la tirtiro.
+Server-ka ayaa markaas samaynaya hubin weyn oo dhinaca ammaanka ah si aan xogta loogu tirtirin si kama' ah.
+Haddii la oggolaado shaqadaas, xogtaas si rasmi ah ayaa looga saaraa database-ka MongoDB.
+Tani waxay ka dhigan tahay in xogtaas aysan ka muuqan doonin liisaska dambe ee la soo aqrinayo.
+Waa amar awood badan oo loo baahan yahay in si taxadar leh loo isticmaalo mar kasta.
 
 ---
 
-## Technical Stack
-- **Backend**: Node.js, Express, MongoDB
-- **Frontend**: Vanilla HTML, CSS, JavaScript
-
----
-*Mahadsanid iyo Guul ayaan kuu rajeynayaa!*
+### Isku-duubnida Mashruuca iyo Sida uu u Shaqeeyo
+Mashruucan wuxuu ka kooban yahay in ka badan 100 qaybood oo isku xiran si loo hubiyo in maamulku u socdo si hufan.
+Frontend-ka iyo Backend-ku waxay wada hadlaan saacad kasta iyagoo adeegsanaya dariiqyada (Routes) la diyaariyay.
+Xogta oo dhan waxay ku kaydsan tahay MongoDB oo ah database aad u ammaan badan oo casri ah.
+Isticmaalaha nidaamka wuxuu ku dhex shaqeynayaa jawi qurux badan oo fudud, iyadoo server-ku uu shaqada adaq qabanayo.
+Tani waxay ka dhigan tahay in iskuulka looga guuray habkii hore ee warqadaha loona guuray hab digital ah oo hufan.
+Xiriir kasta oo dhex mara labada dhinac wuxuu leeyahay hubin ammaan (Security check) oo aad u adag.
+Maamuluhu waa qofka ugu awoodda badan ee wax kasta beddeli kara ama tirtiri kara nidaamka dhexdiisa.
+Macalimiintu waxay leeyihiin xafiis u gaar ah oo ay xogta casharrada iyo natiijooyinka ku maamulaan.
+Ardayduna waxay leeyihiin qayb ay ku eegtaan horumarkooda waxbarasho iyagoon waxba beddeli karin.
+Nidaamkan waxaa loo dhisay inuu u adeego tiro kasta oo dad ah, isagoo markasta ilaalinaya xawaarihiisa sare.
+Waad ku mahadsan tahay inaad dib u eegis ku sameyso mashruucan maamulka iskuulka ee casriga ah ee heerka sare ah.
+Haddii aad u baahato inaad wax ka beddesho ama aad wax ku darto, nidaamku waa mid u furan in la ballaariyo.
+Dhammaan qaybaha code-ka waa kuwo si nidaamsan loo qoray si mustaqbalka loogu daro muuqaalo kale.
+Waxaan rajaynaynaa in nidaamkani uu isbeddel weyn ku sameeyo habka maamulka waxbarashada iskuulkaaga.
+Xusuusnow, tignoolajiyadu waa mida kuu fududeynaysa noloshaada, nidaamkana waa tusaale nool oo taas ah.
+Mid kasta oo ka mid ah GET, POST, iyo DELETE waa tiirar muhiim u ah shaqada maalinlaha ah ee websaydhkan.
+Haddii mid ka mid ah uu meesha ka baxo, nidaamku ma noqon karo mid dhammaystiran ama mid shaqeynaya.
+Sidaas darteed, waxaan u hubinnay mid kasta oo iyaga ka mid ah inay u shaqeeyaan sidii loogu talagalay oo sax ah.
+Guul ayaan u rajaynaynaa dhammaan dadka isticmaalaya nidaamkan maamulka iskuulka ee weyn ee awoodda badan.
+Kani waana dhamaadka sharaxaadda kooban ee ku saabsan sida uu u shaqeeyo mashruucaaga weyn ee maamulka.
+Af-Soomaali fudud ayaan ugu sharaxnay si qof walba oo akhrinaya uu u fahmo mucda iyo nuxurka shaqadan.
+Mashruucan wuxuu daboolayaa baahiyo badan oo laga yaabo in iskuulku u baahdo mustaqbalka dhow iyo kan fog.
+Waxaan ku darnay qaybo badan oo isugu jira xisaabaadyo iyo diwaangelinno muhiim u ah maareynta Ardayda.
+Sidaas darteed, README-gan wuxuu ku siinayaa sawir guud oo ku saabsan sida ay wax u socdaan gudaha iyo dibadda.
+Hadaba, ku raaxayso isticmaalka nidaamkan oona ka faa'iideyso awooddiisa weyn ee uu kuu keenay.
+Shaqo wanaagsan iyo guul ayaan mar kale idiin rajaynaynaa dhammaantiin, horumar wacan!
+Fadlan hubi in xogtaada backend-ka ee .env ay si sax ah ugu xiran tahay database-ka MongoDB meel kasta.
+Haddii ay taasi sax tahay, waxaad heli kartaa dhamaan faa'iidooyinka aan kor ku soo xusnay ee GET/POST/DELETE.
+Ugu dambayn, websaydhkan wuxuu diyaar u yahay in kor looga qaado tayadiisa markasta oo loo baahdo.
+Mahadsanid.
