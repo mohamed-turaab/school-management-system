@@ -1,6 +1,6 @@
 # Nidaamka Maamulka Iskuulka (School Management System)
 
-Ku soo dhowaad nidaamka casriga ah ee loogu talagalay maareynta iyo maamulka iskuulkaaga. Mashruucan wuxuu kuu sahlayaa inaad si fudud u maamusho ardayda, macalimiinta, iyo dhammaan diwaangelinta iskuulka adigoo isticmaalaya computer-kaaga ama mobile-kaaga.
+Ku soo dhowaad nidaamka casriga ah ee loogu talagalay maareynta iyo maamulka iskuulka . Mashruucan wuxuu kuu sahlayaa inaad si fudud u maamusho ardayda, macalimiinta, iyo dhammaan diwaangelinta iskuulka adigoo isticmaalaya computer-kaaga ama mobile-kaaga.
 
 ---
 
@@ -56,11 +56,5 @@ Si ay xogtu u dhex marto Frontend-ka iyo Backend-ka, waxaan isticmaalnaa amarrad
 - **DELETE (Tirtirista)**: Waxaan u isticmaalnaa inaan xogta ka saarno nidaamka markii aan loo baahnayn.
 
 Mashruucan waxaa loo diyaariyay inuu iskuulkaaga ka dhigo mid casri ah oo digital ah. Dhammaan qaybaha isku xiran ee nidaamkan waxay u shaqeeyaan si hufan oo ammaan ah.
-Haddii aad u baahato inaad wax badan ka ogaato, fadlan la xiriir kooxda dhistay nidaamkan.
-Waad ku mahadsan tahay isticmaalka nidaamka maamulka iskuulka ee Bright Future School.
-Shaqo wanaagsan iyo horumar wacan!
-Fadlan xusuusnow inaad markasta ka baxdo (Logout) nidaamka marka aad dhameyso shaqadaada si aad u ilaaliso ammaanka xogta iskuulka.
-Nidaamku wuxuu markasta u furan yahay in lagu soo kordhiyo muuqaalo cusub si loo gaaro guulo waaweyn.
-Guul ayaan idiin rajaynaynaa dhammaantiin!
----
-Mahadsanid.
+
+
